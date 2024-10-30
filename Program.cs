@@ -9,20 +9,14 @@ static int userGrade;
 
     public static void Main(string []args)
     {
-        UserGradeInput();
         LetterGradeCalculator();
     }
-
-//Asks for and translates number grade.
-    public static void UserGradeInput()
-    {
-      Console.WriteLine("Please input your number grade.");
-      userGradeInput = Console.ReadLine();
-      int userGrade = int.Parse (userGradeInput);
-    }
-
     public static void LetterGradeCalculator()
     {
+    Console.WriteLine("Please input your number grade.");
+      userGradeInput = Console.ReadLine();
+      int userGrade = int.Parse (userGradeInput);
+        
         if (userGrade >= 100)
         {
             Console.WriteLine("Letter Grade: A+");
@@ -53,5 +47,6 @@ static int userGrade;
             Console.WriteLine("Letter Grade: E");
             Console.WriteLine("Don't give up!");
         }
+
     }
 }
